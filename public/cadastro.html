@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="src\assets\css\reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="src\assets\img\logoIcon.ico">
+    <link rel="stylesheet" href="src\assets\css\cadastro.css">
+</head>
+
+<body>
+
+    <main>
+        <form autocomplete="nope" action="export.php" method="post">
+            <fieldset>
+                <legend>Cadastro de Usuário</legend>
+
+                <div class="inputBox">
+                    <input autocomplete="false" type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelUser">Nome Completo</label>
+                </div>
+
+                <div class="inputBox">
+                    <input autocomplete="false" type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelUser">E-mail</label>
+                </div>
+
+                <div class="inputBox">
+                    <input autocomplete="false" type="tel" name="tel" id="tel" class="inputUser" required>
+                    <label for="tel" class="labelUser">Telefone</label>
+                </div>
+
+                <div class="inputDate">
+                    <label for="data_nasc">Data de Nascimento:</label>
+                    <input autocomplete="false" type="date" name="data_nasc" id="data_nasc" pattern="\d{2}-\d{2}-\d{4}" required>
+                </div>
+
+                <div class="inputBox">
+                    <input autocomplete="false" type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelUser">Senha</label>
+                </div>
+
+                <div class="inputBox">
+                    <input autocomplete="false" type="password" name="confirm" id="confirm" class="inputUser" required>
+                    <label for="confirm" class="labelUser">Confirmar Senha</label>
+                </div>
+
+                <div class="inputCheckBox">
+                    <input autocomplete="false" type="checkbox" id="news" name="news" value="news">
+                    <label for="news">Deseja se Inscrever no Newsletter? (Opcional)</label>
+                </div>
+
+                <div class="inputCheckBox">
+                    <input autocomplete="false" type="checkbox" id="termos" name="termos" value="termos" required>
+                    <label for="termos">Aceite os Termos de Serviço para Criar Usuário.</label>
+                </div>
+
+                <input autocomplete="false" type="submit" id="submit" href="index.html" value="Criar">
+            </fieldset>
+        </form>
+    </main>
+</body>
