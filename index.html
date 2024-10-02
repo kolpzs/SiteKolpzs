@@ -4,26 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    <link rel="stylesheet" href="src\assets\css\reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="imagex/png" href="src\assets\img\logoIcon.ico">
-    <link rel="stylesheet" href="src\assets\css\login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <title>Kolpzs - Início</title>
 </head>
 
 <body>
 
+    <header>
+        <div class="header">
+            <a href="https://www.instagram.com/zjoaopedrosz/">
+                <img src="src/assets/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://github.com/kolpzs">
+                <img src="src/assets/icons/github.svg" alt="GitHub">
+            </a>
+            <img id="logo" src="src/assets/img/logo.png" alt="Logo">
+            <a href="https://www.linkedin.com/in/kolpzs/">
+                <img src="src/assets/icons/linkedin.svg" alt="Linkedin">
+            </a>
+            <a href="https://www.youtube.com/@kolpzs">
+                <img src="src/assets/icons/youtube.svg" alt="Youtube">
+            </a>
+        </div>
+    </header>
+
     <main>
-        <form action="menu.php" method="post">
-            <img src="src\assets\img\logo.png">
-            <label>Usuário</label>
-            <input type="text" id="user" placeholder="Usuário">
-            <label>Senha</label>
-            <input type="password" id="password" placeholder="Senha">
-            <input type="submit" id="submit" href="menu.html" value="Entrar">
-            <a href="cadastro.html">Cadastre-se</a>
-        </form>
+        <div class="container-01">
+            <div class="start">
+                <h2>MEU PORTFÓLIO</h2>
+                <p>Projetos feitos por mim ou que participei, voltados para o desenvolvimentos de ideais e geração de
+                    experiência.</p>
+            </div>
+            <div class="img">
+
+            </div>
+        </div>
+        <div class="container-02">
+            <h2>SOBRE MIM</h2>
+            <div class="texto">
+                <p class="tabbed-text">Olá! Meu nome é <span style="font-weight: bold;">João Pedro Santos</span>. Sou
+                    estudante de Engenharia de Software,
+                    apaixonado por tecnologia e desenvolvimento de software. Sempre atento aos <span
+                        style="font-weight: bold;">detalhes</span>, estou
+                    constantemente buscando maneiras de aprimorar minhas habilidades e conhecimentos.
+                </p>
+                <p class="tabbed-text" id="right">Tenho experiência em <span style="font-weight: bold;">diversos projetos</span>,
+                    tanto acadêmicos quanto pessoais, que me permitiram desenvolver uma sólida base em programação e design de software.
+                    Adoro trabalhar em equipe e acredito que a colaboração é essencial para criar soluções inovadoras e eficazes.
+                </p>
+                <p class="tabbed-text">Além disso, sou uma pessoa curiosa e dedicada, sempre em busca de novos desafios
+                    que
+                    me permitam crescer profissionalmente e pessoalmente. No meu tempo livre, gosto de explorar novas
+                    tecnologias, contribuir para <span style="font-weight: bold;">projetos de código aberto</span> e
+                    compartilhar meu conhecimento com a
+                    comunidade.
+                </p>
+            </div>
+        </div>
+        <div class="container-03">
+            <div class="repositories">
+                <div class="repository" onclick="window.location.href='https://github.com/kolpzs/SistemaDeServicos';">
+                    <h3>TITULO</h3>
+                    <p>Descrição</p>
+                </div>
+                <div class="repository">
+                    <h3>TITULO</h3>
+                    <p>Descrição</p>
+                </div>
+                <div class="repository">
+                    <h3>TITULO</h3>
+                    <p>Descrição</p>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <img src="src/assets/img/logo.png" id="logo" alt="Logo">
+        <div class="text">
+
+        </div>
+    </footer>
 </body>
+
+</html>

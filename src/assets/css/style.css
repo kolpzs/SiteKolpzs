@@ -1,0 +1,209 @@
+:root {
+    --background-color: #2C3B3D;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #2C3B3D;
+    z-index: -999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 50%;
+    min-height: 80px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background-color);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 14px 23px 4px rgba(0, 0, 0, 0.75);
+}
+
+.header {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header a {
+    width: 24px;
+    height: auto;
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg);
+    transform: 1s ease;
+}
+
+.header #logo {
+    max-width: 48px;
+    height: auto;
+    margin: 2px 0;
+}
+
+main {
+    padding-top: 150px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    justify-content: center;
+}
+
+.container-01 {
+    width: 70%;
+    min-height: 60vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.container-01 .start {
+    text-align: justify;
+    max-width: 370px;
+    margin-top: 80px;
+
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container-01 .start h2 {
+    color: #5ADBA5;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.container-01 .start p {
+    color: white;
+    font-size: 1rem;
+}
+
+.container-02 {
+    width: 70%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-02 .texto {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-02 .tabbed-text::before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    white-space: pre;
+}
+
+.container-02 .tabbed-text br::before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    white-space: pre;
+}
+
+.container-02 h2 {
+    font-family: "Hammersmith One", sans-serif;
+    text-align: center;
+    color: #FFA07A;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+.container-02 #right {
+    text-align: right;
+}
+
+.container-02 p {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.container-03 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.repositories{ 
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: green;
+    margin: 20px;
+}
+
+.repository {
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+.repository h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+footer {
+    width: 100%;
+    min-height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer #logo {
+    max-width: 140px;
+    height: auto;
+    margin: 2px 0;
+    filter: grayscale(100%);
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
