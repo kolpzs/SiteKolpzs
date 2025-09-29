@@ -1,93 +1,232 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duchico Transporte - Logística Internacional de Excelência</title>
+    <meta name="description" content="Especialistas em transporte rodoviário internacional de cargas entre Brasil e Paraguai. Conectando fronteiras com segurança e eficiência.">
+    <meta name="theme-color" content="#C00000">
+    <meta name="author" content="Duchico Transporte">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/assets/css/style.css">
-    <link rel="icon" href="src/assets/img/logo.png" type="image/png">
-    <title>Kolpzs - Início</title>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
 <body>
-    <!--
-    <header>
-        <div class="header">
-            <a href="https://www.instagram.com/zjoaopedrosz/">
-                <img src="src/assets/icons/instagram.svg" alt="Instagram">
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo-link">
+                <img src="img/Captura_de_tela_2025-09-02_085348-removebg-preview.png" alt="Duchico Transporte Logo" class="logo">
             </a>
-            <a href="https://github.com/kolpzs">
-                <img src="src/assets/icons/github.svg" alt="GitHub">
-            </a>
-            <img id="logo" src="src/assets/img/logo.png" alt="Logo">
-            <a href="https://www.linkedin.com/in/kolpzs/">
-                <img src="src/assets/icons/linkedin.svg" alt="Linkedin">
-            </a>
-            <a href="https://www.youtube.com/@kolpzs">
-                <img src="src/assets/icons/youtube.svg" alt="Youtube">
-            </a>
+            <nav class="nav-menu">
+                <a href="#sobre" data-translate="about">Sobre</a>
+                <a href="#servicos" data-translate="services">Serviços</a>
+                <a href="#diferenciais" data-translate="features">Diferenciais</a>
+                <a href="#contato" data-translate="contact">Contato</a>
+            </nav>
+            <div class="header-right">
+                <div class="language-switcher">
+                    <button class="language-button" id="lang-pt">PT <img src="https://flagsapi.com/BR/flat/24.png" alt="Brasil Flag"></button>
+                    <button class="language-button" id="lang-es">ES <img src="https://flagsapi.com/PY/flat/24.png" alt="Paraguay Flag"></button>
+                </div>
+                <button class="hamburger" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="container-01">
-            <div class="start">
-                <h2>MEU PORTFÓLIO</h2>
-                <p>Projetos feitos por mim ou que participei, voltados para o desenvolvimentos de ideais e geração de
-                    experiência.</p>
+        <section class="hero">
+            <div class="hero-background">
+                <video playsinline autoplay muted loop poster="img/Gemini_Generated_Image_vzzcycvzzcycvzzc.png">
+                    <source src="img/hero-video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos em HTML5.
+                </video>
             </div>
-            <div class="img">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <h1 class="animate-on-load" data-translate="hero_title">Excelência em Logística Internacional</h1>
+                <p class="animate-on-load" data-delay="0.2s" data-translate="hero_subtitle">Conectamos Brasil e Paraguai com a agilidade e a segurança que sua carga necessita.</p>
+                <a href="#contato" class="cta-button animate-on-load" data-delay="0.4s" data-translate="hero_cta">Solicite sua Cotação <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </section>
 
-            </div>
-        </div>
-        <div class="container-02">
-            <h2>SOBRE MIM</h2>
-            <div class="texto">
-                <p class="tabbed-text">Olá! Meu nome é <span style="font-weight: bold;">João Pedro Santos</span>. Sou
-                    estudante de Engenharia de Software,
-                    apaixonado por tecnologia e desenvolvimento de software. Sempre atento aos <span
-                        style="font-weight: bold;">detalhes</span>, estou
-                    constantemente buscando maneiras de aprimorar minhas habilidades e conhecimentos.
-                </p>
-                <p class="tabbed-text" id="right">Tenho experiência em <span style="font-weight: bold;">diversos projetos</span>,
-                    tanto acadêmicos quanto pessoais, que me permitiram desenvolver uma sólida base em programação e design de software.
-                    Adoro trabalhar em equipe e acredito que a colaboração é essencial para criar soluções inovadoras e eficazes.
-                </p>
-                <p class="tabbed-text">Além disso, sou uma pessoa curiosa e dedicada, sempre em busca de novos desafios
-                    que
-                    me permitam crescer profissionalmente e pessoalmente. No meu tempo livre, gosto de explorar novas
-                    tecnologias, contribuir para <span style="font-weight: bold;">projetos de código aberto</span> e
-                    compartilhar meu conhecimento com a
-                    comunidade.
-                </p>
-            </div>
-        </div>
-        <div class="container-03">
-            <div class="repositories">
-                <div class="repository" onclick="window.location.href='https://github.com/kolpzs/SistemaDeServicos';">
-                    <h3>TITULO</h3>
-                    <p>Descrição</p>
-                </div>
-                <div class="repository">
-                    <h3>TITULO</h3>
-                    <p>Descrição</p>
-                </div>
-                <div class="repository">
-                    <h3>TITULO</h3>
-                    <p>Descrição</p>
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image animate-on-scroll">
+                        <img src="img/Gemini_Generated_Image_rm6ad9rm6ad9rm6a.png" alt="Caminhão moderno da Duchico Transporte em um pátio logístico">
+                    </div>
+                    <div class="about-text animate-on-scroll">
+                        <span class="section-tag" data-translate="about_tag">Nossa Trajetória</span>
+                        <h2 data-translate="about_title">Confiança e Experiência na Rota Brasil-Paraguai</h2>
+                        <p data-translate="about_text">Há anos no mercado, a Duchico Transporte se especializou na rota Foz do Iguaçu - Assunção, oferecendo um serviço de logística integrada de alta performance. Nossa missão é garantir que sua carga chegue ao destino com máxima eficiência e segurança, cuidando de cada detalhe do processo com a dedicação que sua empresa merece.</p>
+                        <div class="values">
+                            <div class="value-item"><i class="fas fa-bullseye"></i> <span data-translate="value_1">Foco no Cliente</span></div>
+                            <div class="value-item"><i class="fas fa-shield-alt"></i> <span data-translate="value_2">Segurança Total</span></div>
+                            <div class="value-item"><i class="fas fa-trophy"></i> <span data-translate="value_3">Compromisso com a Excelência</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="servicos" class="services">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag" data-translate="services_tag">Nossas Soluções</span>
+                    <h2 data-translate="services_title">Transporte Inteligente para Cada Necessidade</h2>
+                    <p data-translate="services_subtitle">Oferecemos uma frota moderna e versátil para garantir a integridade e a pontualidade da sua entrega.</p>
+                </div>
+                <div class="fleet-grid">
+                    <div class="fleet-card animate-on-scroll">
+                        <div class="card-icon"><img src="img/graneira_m.png" alt="Ícone Carreta Graneleira"></div>
+                        <h3 data-translate="service_1_title">Carretas Graneleira</h3>
+                        <p data-translate="service_1_text">Ideal para o transporte seguro de grãos e mercadorias a granel.</p>
+                    </div>
+                    <div class="fleet-card animate-on-scroll">
+                        <div class="card-icon"><img src="img/t4_m.png" alt="Ícone Carreta Prancha"></div>
+                        <h3 data-translate="service_2_title">Carretas Prancha</h3>
+                        <p data-translate="service_2_text">Soluções para cargas pesadas, indivisíveis e de grandes dimensões.</p>
+                    </div>
+                     <div class="fleet-card animate-on-scroll">
+                        <div class="card-icon"><img src="img/t1_m.png" alt="Ícone Carreta Baú"></div>
+                        <h3 data-translate="service_3_title">Carretas Baú</h3>
+                        <p data-translate="service_3_text">Proteção total para sua carga seca em nossos baús modernos e seguros.</p>
+                    </div>
+                    <div class="fleet-card animate-on-scroll">
+                        <div class="card-icon"><img src="img/t2_m.png" alt="Ícone Carreta Frigorífica"></div>
+                        <h3 data-translate="service_4_title">Carretas Frigorífica</h3>
+                        <p data-translate="service_4_text">Cadeia de frio garantida para produtos perecíveis e termossensíveis.</p>
+                    </div>
+                    <div class="fleet-card animate-on-scroll">
+                        <div class="card-icon"><img src="img/ic_truck.png" alt="Ícone Caminhões Truck"></div>
+                        <h3 data-translate="service_5_title">Caminhões Truck</h3>
+                        <p data-translate="service_5_text">Agilidade e versatilidade para coletas, entregas e cargas fracionadas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="diferenciais" class="features">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag" data-translate="features_tag">Por que nos escolher?</span>
+                    <h2 data-translate="features_title">Vantagens que Fazem a Diferença</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item animate-on-scroll">
+                        <div class="feature-icon"><i class="fas fa-route"></i></div>
+                        <h3 data-translate="feature_1_title">Rota Especializada</h3>
+                        <p data-translate="feature_1_text">Conhecimento profundo da rota Foz do Iguaçu - Assunção, otimizando prazos e custos para sua empresa.</p>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                         <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3 data-translate="feature_2_title">Segurança de Ponta a Ponta</h3>
+                        <p data-translate="feature_2_text">Monitoramento 24/7 e seguro total para sua mercadoria, garantindo sua tranquilidade do embarque à entrega.</p>
+                    </div>
+                    <div class="feature-item animate-on-scroll">
+                         <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                        <h3 data-translate="feature_3_title">Atendimento Personalizado</h3>
+                        <p data-translate="feature_3_text">Nossa equipe de especialistas está pronta para oferecer suporte dedicado e as melhores soluções para sua logística.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="endereco" class="location">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag" data-translate="location_tag">Nossas Sedes</span>
+                    <h2 data-translate="location_title">Onde nos Encontrar</h2>
+                </div>
+                <div class="location-wrapper">
+                    <div class="location-buttons">
+                        <button class="location-button active" data-location="br" data-translate="brazil_btn">Brasil</button>
+                        <button class="location-button" data-location="py" data-translate="paraguay_btn">Paraguai</button>
+                    </div>
+                    <div class="location-content">
+                        <div class="location-map active" id="map-br">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.531238914652!2d-54.54422288898147!3d-25.48738377742133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f68593361138a5%3A0xb33b6c7ff373b53a!2sDUCHICO%20-%20Transporte%20Rodovi%C3%A1rio%20de%20Carga%20Ltda.!5e0!3m2!1spt-BR!2sbr!4v1727276587399!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                         <div class="location-map" id="map-py">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7291705641753!2d-57.63584868898938!3d-25.27958157755716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da7e1899120fd%3A0x6e9f1a2a4b8721c5!2sDuchico%20Transporte%20S.A.!5e0!3m2!1spt-BR!2sbr!4v1727276634351!5m2!1spt-BR!2sbr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info animate-on-scroll">
+                        <span class="section-tag" data-translate="contact_tag">Entre em Contato</span>
+                        <h2 data-translate="contact_title">Pronto para Otimizar sua Logística?</h2>
+                        <p data-translate="contact_subtitle">Nossa equipe está pronta para atender. Fale conosco por telefone, email ou preencha o formulário para receber uma cotação detalhada.</p>
+                        <div class="info-block" id="contact-br">
+                            <h4><i class="fas fa-map-marker-alt"></i> Brasil</h4>
+                            <p>Rua Silvio Sotomaior, 437 | Pilar Parque Campestre, Foz do Iguaçu - PR, CEP: 85.862-295</p>
+                            <a href="tel:+554535762008">+55 (45) 3576-2008</a>
+                            <a href="mailto:contato@duchicotransporte.com.br">contato@duchicotransporte.com.br</a>
+                        </div>
+                        <div class="info-block" id="contact-py">
+                            <h4><i class="fas fa-map-marker-alt"></i> Paraguai</h4>
+                            <p>Rca de Colombia, 415 Esquina Caballero, Asunción - PY</p>
+                            <a href="tel:+59521450704">+595 21 450 704</a>
+                             <a href="mailto:contacto@duchicotransporte.com.py">contacto@duchicotransporte.com.py</a>
+                        </div>
+                    </div>
+                    <form class="contact-form animate-on-scroll">
+                        <h3 data-translate="form_title">Fale com um Especialista</h3>
+                        <div class="form-group"><input type="text" name="name" placeholder="Seu nome" required data-translate="form_name_placeholder"></div>
+                        <div class="form-group"><input type="email" name="email" placeholder="Seu e-mail" required data-translate="form_email_placeholder"></div>
+                        <div class="form-group"><textarea name="message" rows="5" placeholder="Como podemos ajudar?" required data-translate="form_message_placeholder"></textarea></div>
+                        <button type="submit" class="cta-button" data-translate="form_submit_btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    -->
-    <main>
-        <h2>KOLPZS</h2>
-        <button><a href="https://www.instagram.com/zjoaopedrosz/">HERE</a></button>
-    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <img src="img/Captura_de_tela_2025-09-02_085348-removebg-preview.png" alt="Duchico Transporte Logo" class="footer-logo">
+                    <p data-translate="footer_about">Conectando fronteiras, impulsionando negócios.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="footer_nav">Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre" data-translate="about">Sobre Nós</a></li>
+                        <li><a href="#servicos" data-translate="services">Serviços</a></li>
+                        <li><a href="#diferenciais" data-translate="features">Diferenciais</a></li>
+                        <li><a href="#contato" data-translate="contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Duchico Transporte. <span data-translate="footer_rights">Todos os direitos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/554591390057?text=Olá,%20visitei%20o%20site%20e%20gostaria%20de%20solicitar%20uma%20cotação." class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
